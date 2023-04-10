@@ -1,0 +1,53 @@
+/*SISTEMA DE FILAS Y COLUMNAS*/
+
+/* En el framework BootStrap, la pantalla está dividida en 12 columnas de tamaño igual. Para configurar el tamaño y ubicación de diferentes
+cajas o elementos unimos 2 o más cajas, dependiendo del ancho. Maquetamos por secciones. BootStrap Grid System
+*/
+
+*{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    text-decoration:none;
+    font-family:sans-serif;
+    box-sizing: border-box; /*Asegura que una caja no me empuje otra hacia abajo a causa de los bordes
+                                Asegura que el relleno y el borde estén incluiodos en el ancho y ancho total
+                                de la caja HTML*/
+}
+
+.contenedor{
+    position: relative;
+    margin:auto;
+    width: 100%;
+    height: auto;
+
+}
+
+
+.fila{
+    position: relative;
+    margin:auto;
+    width: 100%;
+    height: auto;
+}
+
+/*Para que ocupe todo el ancho, las 12 columnas*/
+.col-12{
+    width:100%;
+    background:red;
+    border:1px solid black;
+}
+
+/*Para que ocupe todo el ancho, las 12 columnas*/
+.col-6{
+    float:left; /*Pongo a flotar las cajas de izquierda a derecha, sino me aparece una debajo de otra*/
+    width:50%;
+    background:green;
+    border:1px solid black;
+}
+.col-4{
+    float:left; /*Pongo a flotar las cajas de izquierda a derecha, sino me aparece una debajo de otra*/
+    width:33.33333333%;  /*BootStrap recomienda que sean 8 decimales*/
+    background:magenta;
+    border:1px solid black;
+}
