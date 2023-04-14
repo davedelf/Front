@@ -1,23 +1,158 @@
 <!DOCTYPE html>
 <html>
+<!-- A la hora hacer resonsive un sitio nuevo o uno existente conviene separar en secciones
+para falicitar el proceso, es decir, modularizar en filas. Tratar de realizar una abstraccion del sitio
+e ir separando en filas horizontales.
+Tip: Sacamos captura de pantalla del sitio y con la ayuda de paint maquetamos o separamos en filas horizontales
+utilizando formas de cuadrado/rectángulo-->
 <head>
+        <meta charset="utf-8">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <meta name="author" content="David">
+
         <meta name="description" content="Descripción del sitio">
+
         <meta name="keywords" cotent="html, desarrollo web, css">
 
         <title>Diseño Web responsivo</title>
+
         <link rel="icon" href="img/img01.jpg">
+
         <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
         <link rel='stylesheet' href="css/estilo.css">
 
 
 </head>
 
 <body>
+        <div class="container">
+                
+                <div>
+                        <!--SECCIÓN 1-->
+                        <header class="fila">
+                                <!--Nos manejamos con filas y columnas. A la fila correspondiente a la 
+                                sección 1 la dividimos en columas a conveniencia, vamos viendo en todos los tamaños de pantalla
+                                lg, md, sm,xs como quedan y en base a ello formateamos la cantidad de columnas-->
+
+                                <div id="logo" class="col-lg-2 col-md-2 col-sdm-3 col-xs-12"">Logotipo</div>
+
+                                <div class="col-lg-8 col-md-8 col-sm-6 col-xs-0"></div>
+
+                                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                <center id="icono1"><p>X</p></center>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                <center id="icono2"><p>X</p></center>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                <center id="icono3"><p>X</p></center>
+                                        </div>
+                                </div>
+
+                        </header>
+                        <!--SECCIÓN 2-->
+                        
+                        <nav class="fila">
+
+                                <ul>
+                                        <li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="#">Botón 1</a></li>
+                                        <li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="#">Botón 2</a></li>
+                                        <li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="#">Botón 3</a></li>
+                                        <li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="#">Botón 4</a></li>
+                                        <li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="#">Botón 5</a></li>
+                                        <li class="col-lg-2 col-md-2 col-sm-6 col-xs-12"><a href="#">Botón 6</a></li>
+                                </ul>
+                        </nav>
+
+                        <!--SECCIÓN 3-->
+
+                        <section id="seccion3" class="fila">
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <center>
+                                                <img src="img/img01.jpg">
+                                                <h1>Lorem Ipsum</h1>
+                                                <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </center>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <center>
+                                                <img src="img/img02.jpg">
+                                                <h1>Lorem Ipsum</h1>
+                                                <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </center>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                        <center>
+                                                <img src="img/img03.jpg">
+                                                <h1>Lorem Ipsum</h1>
+                                                <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                        </center>
+                                </div>
+                                
+
+                        </section>
+
+                        <!--SECCIÓN 4-->
+
+                        <section id="seccion4" class="fila">
+
+                                <aside id="izq" class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                        <ul>
+                                                <li><a href="#">Link 1</a></li>
+                                                <li><a href="#">Link 2</a></li>
+                                                <li><a href="#">Link 3</a></li>
+                                                <li><a href="#">Link 4</a></li>
+                                        </ul>
+                                </aside>
+                                <article class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+                                        <h1>Lorem Ipsum</h1>
+
+                                        <p><img src="img/img04.jpg" width="250"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus varius pretium. 
+                                        Curabitur mattis facilisis elit in scelerisque. Nam suscipit ornare urna et fringilla. Aenean et feugiat sapien, eget 
+                                        accumsan  felis. Integer efficitur, erat non luctus pharetra, elit lorem suscipit urna, at tincidunt diam sapien vitae lorem. 
+                                        Quisque id pellentesque sem, quis iaculis dolor. Aenean tempor leo at nulla viverra laoreet. Aliquam cursus massa sapien,
+                                        ac feugiat mauris bibendum at. Ut cursus auctor ipsum ut viverra. Sed eget ipsum vitae enim molestie pharetra eu eu arcu.
+                                        Donec nec sodales nisi, et blandit arcu. Curabitur pharetra pellentesque nibh vitae varius. Curabitur lacinia suscipit 
+                                        turpis at mollis.
+                                        </p>
+
+                                        <br>
+                                        
+                                        <p>Donec pretium lectus sit amet ipsum facilisis congue. Donec fermentum, eros sed consectetur vehicula, sem enim luctus elit,
+                                        a malesuada purus leo id libero. Vestibulum cursus justo in nibh tincidunt malesuada. Nulla vitae condimentum velit, eu 
+                                        convallis odio. Maecenas placerat euismod bibendum. Phasellus cursus quis nisi vitae gravida. Etiam at velit rhoncus enim 
+                                        fringilla sollicitudin vel at enim. Vestibulum ut est vestibulum, rhoncus leo finibus, porta neque. Praesent neque risus,
+                                        malesuada vel nisl ac, rhoncus laoreet lectus. Pellentesque at accumsan nulla. Duis eu cursus erat. Morbi at ornare sem.
+                                        Nullam suscipit vestibulum nulla in lacinia. Sed id neque ligula.</p>
 
 
+                                </article>
+                                
+                                <aside id="der">
+                                        <h1>Ingreso</h1>
+                                        <form>
+                                          <input type="text" placeholder="Usuario">
+                                          <input type="password" placeholder="Contraseña">
+                                          <input type="submit" value="Enviar">
+                                        </form>
+                              
+                                </aside>
+
+                        </section>
+
+                        <!--SECCIÓN 5-->
+
+                        <footer class="fila"></footer>
+                </div>
+
+        </div>
 </body>
 
 </html>
